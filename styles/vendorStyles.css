@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  background-color: rgb(240, 240, 240);
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+#container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 50px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#frmTitle {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 50px; */
+  margin: 20px 20px 20px 10px;
+  flex: 0.3;
+  padding: 50px;
+  padding-left: 100px;
+  width: 100%;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  flex: 0.7;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.twoInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-around;
+  width: 100%;
+  padding: 50px 50px;
+}
+
+.singleInput {
+  display: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-around;
+  width: 100%;
+  padding: 50px 50px;
+}
+
+.input1 {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.input2 {
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.textArea {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* align-items: flex-end; */
+  align-content: flex-end;
+  align-self: flex-end;
+  height: 40px;
+  padding: 10px;
+}
+
+button {
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background-color: #205072;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+::placeholder {
+  margin-left: 5px;
+  padding-left: 5px;
+}
