@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="order.css">
+    <title>Order</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                 <li><a href="">Home</a></li>
+                 <li><a href="Products.html">Products</a></li>
+                 <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <img src="image/lii.png">
+        </aside>
+        <article>
+            <h1>Order</h1>
+
+            <div class="pie">
+                <img src="/">
+                <div class="columns">
+
+                    <div class="title"></div>
+                    <div class="price"></div>
+                </div>
+                
+                <p class="desc"></p>
+               
+            </div>
+
+
+            <form action="http://localhost:7071/api/post" method="POST">
+                <input type = "hidden" id ="pie-order" name = "pie-order">
+                <input type="hidden" id="location" name="location">
+
+
+                <div class="input-group">
+                    <div>
+                        <label for="first-name">First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+                    </div>
+                </div>
+
+  
+                 <label for="last-name">Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" name="last-name" id="last-name" placeholder="last Name">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div>
+                        <label for="address">Address</label>
+                    </div>
+                    <div>
+                        <input type="text" name="address" id="address" placeholder="Address">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div>
+                        <label for="state">State</label>
+                    </div>
+                    <div>
+                   <select name="state" id="state">
+                       <option value="selected">[ Select One ]</option>
+                       <option value="Abia">Abia </option>
+                       <option value="Adamawa">Adamawa</option> 
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                       <option value=" Anambra"> Anambra</option>
+                       <option value=" Bauchi"> Bauchi</option>
+                       <option value=" Bayelsa"> Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo"> Edo</option>
+                       <option value=" Ekiti"> Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo"> Imo</option>
+                        <option value="Jigawa"> Jigawa</option>
+                        <option value="Kaduna"> Kaduna</option>
+                        <option value="Kano"> Kano</option>
+                        <option value="Katsina"> Katsina</option>
+                        <option value="Kebbi"> Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara"> Kwara</option>
+                        <option value="Lagos"> Lagos</option>
+                        <option value="Nasarawa"> Nasarawa</option>
+                        <option value="Niger"> Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo"> Ondo</option>
+                        <option value="Osun"> Osun</option>
+                        <option value="Oyo"> Oyo</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers"> Rivers</option>
+                        <option value="Sokoto"> Sokoto</option>
+                        <option value="Taraba"> Taraba</option>
+                        <option value="Yobe"> Yobe</option>
+                        <option value="Zamfara"> Zamfara</option>
+                        <option value="FCT Abuja">FCT Abuja</option> 
+                        </option>
+                   </select>
+
+                </div>
+
+                
+                <div class="input-group">
+                    <div>
+                        <label for="postal-code">Postal Code</label>
+                    </div>
+                    <div>
+                        <input type="text" name="postal-code" id="postal-code">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <div>
+                        <label for="comments">Comments</label>
+                    </div>
+                    <div>
+                        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+
+               <div class="access">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Order">
+               </div>
+                    
+            </form>
+        </article>
+       
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
+<script src="order.js"></script>
+</body>
+</html>
