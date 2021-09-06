@@ -1,1 +1,0 @@
-# Agro-Ecommerce-Platform
